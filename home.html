@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./home.css">
+</head>
+
+<body>
+    <div class="main">
+        <!-- As a link -->
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">MAIN</a>
+            </div>
+        </nav>
+    </div>
+
+    <div>
+
+        <div>
+             <input type="file" name="file" id="file" accept=".csv" > <br><br>
+             <input type="button" id="btnsubmit" value="Submit" onclick="readCSVFile();" >
+        </div>
+    
+        <br><br>
+        <!-- List CSV file data -->
+        <table id="tblcsvdata" border="1" style="border-collapse: collapse;">
+             <thead>
+                  <tr>
+                      <th>S.no</th>
+                      <th>Information</th>
+                    
+                  </tr>
+             </thead>
+             <tbody>
+    
+             </tbody>
+    
+        </table>
+    </div>
+
+    <script src="./home.js"></script>
+
+
+</body>
+
+</html>
